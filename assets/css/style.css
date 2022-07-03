@@ -1,0 +1,299 @@
+.navbartop
+{
+    background-color:white;
+}
+.logo
+{
+    margin-left: 100px;
+}
+
+.banner
+{
+    background: linear-gradient(to right, #ebefff 50%, #fff 50%);
+    padding-bottom: 150px;
+}
+
+.link
+{
+    position: relative;
+    right: 150px;
+    gap:10px;
+}
+
+.intro
+{
+    padding:70px;
+}
+.panel
+{
+    max-width: 350px;
+    overflow: hidden;
+}
+.image
+{
+    width: 100%;
+    object-fit: contain;
+}
+
+.fintroname
+{
+
+font-size: 60px;
+font-family: "Poppins", sans-serif;
+color: #222222;
+font-weight: 500;
+box-sizing: border-box;
+}
+
+.fintrodesc
+{
+    
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.625em;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.abpanel
+{
+    max-width: 200px;
+    padding-left:15;
+}
+.abimage
+{
+    width: 100%;
+    object-fit: contain;
+}
+
+/*for the card*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+/*for the circle progress*/
+
+.progressa{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progressa:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progressa > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progressa .progressa-left{
+    left: 0;
+}
+.progressa .progressa-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 8px; /*for the width of the progressa panel*/
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progressa .progressa-left .progressa-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progressa .progressa-right{
+    right: 0;
+}
+.progressa .progressa-right .progressa-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progressa .progressa-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: white;
+
+    font-size: 24px;
+    color: black;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progressa.blue .progressa-bar{
+    border-color: #007bff;
+}
+.progressa.blue .progressa-left .progressa-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+ 
+ .progressa-left .progressa-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+
+ .progressa-left .progressa-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+ .progressa-left .progressa-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+/*for the normal progress bar*/
+.pro
+{
+    padding-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+skills
+{
+    width: 100%;
+    gap:0;
+}
+
+
+.wcard {
+    position: relative;
+    max-width: 350px;
+    padding:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+
+    text-align: center;
+    font-family: arial;
+    
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .wcard:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+a
+{
+    text-decoration: none;
+}
+.wlink
+{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    top:40%;
+}
+
+.freelancer
+{
+    background-color: black;
+    color: white;
+    padding:100px;
+    
+}
+
